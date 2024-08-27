@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: expense-db
+  name: db-deployment
   namespace: expense
   labels:
     project: expense
@@ -28,7 +28,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: expense-db
+  name: db-service
   namespace: expense
 spec:
   selector:
